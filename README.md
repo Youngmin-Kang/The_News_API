@@ -1,8 +1,7 @@
 # The News API REST Project
 
 ***
-(c) Youngmin Kang
-(c) 2021 Desarrollo de Soluciones Móviles
+(c) Youngmin Kang, 2021 Desarrollo de Soluciones Móviles
 
 ```puml
 @startuml
