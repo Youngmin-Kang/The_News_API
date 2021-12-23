@@ -53,7 +53,7 @@ package cl.ucn.disc.dsm.ykang.newsapi {
         News *--> "1" ZonedDateTime : - publishedAt
         News ..> LongHasFunction : <<use>>
    }
-   package services #cccfccfc{
+   
         interface NewsRepository <<interface>>{
         }
         NewsRepository ..> News : <<use>>
@@ -75,7 +75,7 @@ package cl.ucn.disc.dsm.ykang.newsapi {
         }
         TheNewsApiApplication ..> NewsRepository
        
-   }
+  
    
 }
 @enduml
