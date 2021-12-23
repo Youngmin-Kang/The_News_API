@@ -19,11 +19,32 @@ package externals* #93FC79{
         class LongHasFunction{
             ...
         }
-    }    
-    package com.github.javafaker.Faker{
-    
-        class Faker{
+    }
+    package com.kwabenaberko.newsapilib.network{
+        class APIClient{
             ...
+        }
+        class APIService{
+            ...
+        }
+        package models.Article{
+            class Article{
+               ...
+            }
+        }        
+    }
+    package org.springframework{
+        package jpa.repository.JpaRepository{
+            class JpaRepository{
+               ...
+            }
+             
+        }
+        package stereotype.Repository{
+            interface NewsRepository{
+                ...
+            }
+             
         }
     }
 }
@@ -53,7 +74,7 @@ package cl.ucn.disc.dsm.ykang.newsapi {
         News *--> "1" ZonedDateTime : - publishedAt
         News ..> LongHasFunction : <<use>>
    }
-   
+   package services #cccfccfc{
         interface NewsRepository <<interface>>{
         }
         NewsRepository ..> News : <<use>>
@@ -74,7 +95,7 @@ package cl.ucn.disc.dsm.ykang.newsapi {
             #initializingDatabase(): InitializingBean
         }
         TheNewsApiApplication ..> NewsRepository
-       
+   }
   
    
 }
